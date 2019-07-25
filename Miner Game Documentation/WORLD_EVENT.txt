@@ -1,0 +1,21 @@
+1) A mouse click must be used to trigger the event. 
+It is legal on any space within the grid.
+2) If any entity is in the square that was clicked it will be removed. 
+Once the event is triggered, elmo should spawn. 
+In addition, ice should spawn at the location at which the mouse click occured
+and at the 8 squares adjacent to that square as long as they are in the grid. 
+Only miners will be affected by the ice because ore blobs are immune to the cold.
+Miners will only be affected in they are on the tiles when the ice spawns because
+the ice will freeze over them.
+3) Affected miners should freeze. They will stop moving and stop animating. 
+Essentially, they are dead. They look like a miner except are a little bit more blue.
+4) Elmo is the new entity that spawns. Elmo likes to eat miners, 
+but only miners that are not full because he hates the taste of ore.
+Elmo can move diagonally and side-to-side. 
+
+Additional Information:
+I am grateful that I refactored the code this quarter. I see how much easier 
+it is now to add functionality to my code. The code is now so much easier to 
+understand and modify. I am not really sure how I would add this functionality 
+to the old code, but I'm sure it would be a nightmare.
+ 

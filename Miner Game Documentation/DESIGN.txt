@@ -1,0 +1,69 @@
+Entity:
++Random - is used in methods executeVeinActivity which I put in entity
++getAnimationPeriod - returns animationPeriod which is an instance variable in Entity
++nextImage - modifies titleIndex in entity object
++getCurrentTile - returns a tile from entity instance variable
++executeMinerFullActivity,
++executeMinerNotFullActivity,
++executeOreActivity,
++executeOreBlobActivity,
++executeQuakeActivity,
++executeVeinActivitity - they use the entity instance variables
+-transformNotFull,
+-transformFull,
+-moveToNotFull,
+-moveToFull - only applicable to a miner, which is an entity
+-moveToOreBlob - deals with blob and oreblob, which are entities
+-nextPositionMiner,
+-nextPositionOreBlob - use many instance variables of entities
+-nearestEntity,
+-findNearest - can both be private if in Entity class, also nearestEntity 
+		is called in findNearest, both uses instance variables 
+		from entity class and return entities
++createBlacksmith,
++createMinerFull,
++createMinerNotFull,
++createObstacle,
++createOre,
++createOreBlob,
++createQuake,
++createVein - create different entities
+
+Action:
++executeAction - has a switch statement with a variable from Action
+-executeAnimationAction - uses variables from the Action class
+-executeActivityAction - uses many variables from the Action class
++createAnimationAction,
++createActivityAction - create different kinds of actions
+
+EventSchedule:
++scheduleActions - this method schedules a lot of events and use the
+		 eventSchedule object from its parameter a lot
+
+Point:
++adjacent - return whether two points are adjacent, only deals with points
++distanceSquared - parameters are points and deals with distance between two points
+
+WorldModel:
++findOpenAround - calls withinBounds and is Occupioed 
+		and returns point of open location on WorldModel
+-withinBounds - checks whether point is in world and uses instance variable of WorldModel
++isOccupied - calls withinBounds and checks whether a point is occupied
++addEntity,
++moveEntity - uses methods and instance variables of WorldModel
++removeEntity - removes some entity from WorldModel class
+-removeEntityAt - calls methods from WorldModel
++getOccupant - calls methods from WorldModel
+-getOccupantCell, 
+-setOccupantCell - has an instance varibable of world and is called 
+		in other methods within WorldModel class
++paint - has instance variables from WorldModel class
+
+
+
+
+ 
+
+
+
+
