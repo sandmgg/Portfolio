@@ -1,0 +1,3 @@
+--Mygrep parses an input file and searches for occurrences of a word
+--will output the total number of occurrences and all the lines with the word in it
+-- outputs longest line with the word as well as the numbe of chars in the line and the number of lines in the file
