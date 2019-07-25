@@ -1,0 +1,2 @@
+--implements a hash table to build a concordance
+--keeps track of all the line numbers where these main words occur

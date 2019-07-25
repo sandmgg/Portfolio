@@ -1,0 +1,2 @@
+--encodes and decodes text using Huffman coding
+-- in python
